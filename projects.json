@@ -62,7 +62,6 @@
       "description": "A blockchain-based digital art gallery that allows artists to mint and sell their digital artworks as NFTs.",
       "architecture": "Artists can create accounts and mint their digital artworks as NFTs on the Ethereum blockchain. The frontend is built with Nextjs full stack ( frontend and backend ) to interact with the blockchain via Remix IDE.",
       "tech": ["Nextjs", "Ethereum", "Remix IDE"],
-      "metrics": "100k+ token conversations, memory retrieval <50ms",
       "github": "https://github.com/PrangonChakraborty-1805085/ITVerse_Blockchain_Hackathon",
       "demo": null
     }

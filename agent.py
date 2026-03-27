@@ -52,7 +52,7 @@ _redis_client: redis.Redis | None = None
 def get_redis() -> redis.Redis:
     global _redis_client
     if _redis_client is None:
-        _redis_client = redis.from_url(REDIS_URL, decode_responses=True, ssl_cert_reqs=None)
+        _redis_client = redis.from_url(REDIS_URL, decode_responses=True)
     return _redis_client
 
 
@@ -86,7 +86,6 @@ def load_knowledge_base() -> str:
         lines.append(f"Description: {p['description']}")
         lines.append(f"Architecture: {p['architecture']}")
         lines.append(f"Tech stack: {', '.join(p['tech'])}")
-        lines.append(f"Metrics: {p['metrics']}")
         if p.get("github"):
             lines.append(f"GitHub: {p['github']}")
         if p.get("demo"):
@@ -255,7 +254,6 @@ def retrieve_node(state: AgentState) -> AgentState:
                 f"  Description: {p['description']}\n"
                 f"  Architecture: {p['architecture']}\n"
                 f"  Tech: {', '.join(p['tech'])}\n"
-                f"  Metrics: {p['metrics']}"
             )
 
     # Include experience if relevant
