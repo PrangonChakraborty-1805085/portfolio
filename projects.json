@@ -1,0 +1,79 @@
+{
+  "owner": {
+    "name": "Prangon Chakraborty",
+    "title": "Software Engineer",
+    "location": "Dhaka, Bangladesh",
+    "email": "prangonchakraborty2000@gmail.com",
+    "github": "https://github.com/PrangonChakraborty-1805085",
+    "linkedin": "https://www.linkedin.com/in/prangon-chakraborty-3511a6211/",
+    "bio": "Software Engineer specialising in LangGraph agent topologies, production RAG pipelines, and multi-agent orchestration. 2+ years building systems that are serving pharmaceutical companies.",
+    "skills": ["LangGraph", "LangChain", "FastAPI", "Next.js", "Python", "Redis", "pgvector", "GPT-4o", "Claude 3.5", "Llama 3", "Docker", "Kubernetes", "AWS", "GCP", "LangSmith"]
+  },
+  "projects": [
+    {
+      "id": "PhD Hunter",
+      "name": "PhD Hunter - AI-Powered University & Professor Discovery for Graduate Applications",
+      "type": "Multi-Agent System",
+      "status": "production",
+      "description": "A multi-agent AI system where a core orchestrator dynamically discovers and delegates to four specialised agents — each one responsible for a slice of the application pipeline. The agents communicate over Google's open Agent-to-Agent (A2A) protocol, making the system modular, observable, and extensible",
+      "architecture": "Orchestrator Agent built on LangGraph's StateGraph architecture. Four specialised agents: University Research Agent (crawls university websites, extracts research interests), Professor Finding Agent (builds detailed profiles of potential advisors), Ranking Agent (evaluates and ranks potential matches) and Email Composer Agent. Orchestrator routes tasks and aggregates results.",
+      "tech": ["LangGraph", "Openrouter", "Tavily", "FastAPI", "Streamlit", "Python"],
+      "github": "https://github.com/PrangonChakraborty-1805085/phd_hunter",
+      "demo": "https://phd-hunter.streamlit.app/"
+    },
+    {
+      "id": "Vertex-AI",
+      "name": "VERTEX — AI Financial Intelligence Engine",
+      "type": "Multi-Agent System with Graph Memory",
+      "status": "production",
+      "description": "A multi-agent orchestrator agent collaborating with specialized agents through A2A protocol and establishing graph memory.",
+      "architecture": "Specialized agents gather data about markets and 2 specialized agents debate from different perspectives based on the data. The orchestrator agent synthesizes insights and stores them in a graph memory for long-term strategic analysis.",
+      "tech": ["LangChain", "LangGraph", "FastAPI", "ChromaDB", "NetworkX + Pickle", "Python"],
+      "github": "https://github.com/PrangonChakraborty-1805085/vertex-ai",
+      "demo": "https://vertex-ai.streamlit.app/"
+    },
+    {
+      "id": "Tech-Pulse-AI",
+      "name": "Tech-Pulse AI - An AI Interviewer",
+      "type": "AI Interviewer with Dynamic Question Generation",
+      "status": "personal project",
+      "description": "An AI Intelligent Interview System that dynamically generates questions based on the role and candidate's background. In a real-time video conferencing session, candidates join in a video call and our ai interviewer does voice communication with the candidate along with chat. The interface is more like Google Meet with a chat integrated where both the candidate's  and interviewer's audio converts to real-time chat",
+      "architecture": "Google Meet-like interface built with Nextjs and StreamApp for video conferencing. User gets an email with a meeting link at scheduled time. Clicking on that link opens the video call with audio and video enabled. Speech-to-text converts candidate's responses into text, which is fed to the LLM. The LLM generates follow-up questions based on the candidate's background and the role requirements. A chat displays side by side with the video, showing real-time transcriptions and allowing for text-based interaction if needed.",
+      "tech": ["OpenAI API", "Nextjs", "StreamApp", "Web Speech API", "EmailJS"],
+      "github": "https://github.com/PrangonChakraborty-1805085/Tech-Pulse-Ai",
+      "demo": null
+    },
+    {
+      "id": "Visit Bangladesh",
+      "name": "Visit Bangladesh - An Algorithm Based Tour Planner",
+      "type": "Algorithmic Tour Planner",
+      "status": "term project",
+      "description": "A tour planner app that generateds optimized itineraries for tourists based on heuristic travelling salesman algorithm.",
+      "architecture": "A Nextjs frontend allows users to input their preferences like date ranges, persons etc and the tour planner algorithm generates an optimized itinerary. The algorithm does a heuristic search and the backend is built with Java Spring Boot.",
+      "tech": ["Nextjs", "Java Spring Boot"],
+      "github": "https://github.com/PrangonChakraborty-1805085/Visit_Bangladesh_Frontend",
+      "demo": null
+    },
+    {
+      "id": "ArtFlair",
+      "name": "ArtFlair - A Blockchain based Digital Art Gallery",
+      "type": "Blockchain",
+      "status": "Blockchain Hackathon Project",
+      "description": "A blockchain-based digital art gallery that allows artists to mint and sell their digital artworks as NFTs.",
+      "architecture": "Artists can create accounts and mint their digital artworks as NFTs on the Ethereum blockchain. The frontend is built with Nextjs full stack ( frontend and backend ) to interact with the blockchain via Remix IDE.",
+      "tech": ["Nextjs", "Ethereum", "Remix IDE"],
+      "metrics": "100k+ token conversations, memory retrieval <50ms",
+      "github": "https://github.com/PrangonChakraborty-1805085/ITVerse_Blockchain_Hackathon",
+      "demo": null
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Development Engineer 1",
+      "company": "IQVIA",
+      "period": "2024 — Present",
+      "description": "Working as a Software Development Engineer 1 at IQVIA, I am responsible for designing and implementing Agentic AI solutions that enhance our pharmaceutical data analytics capabilities. My role involves collaborating with cross-functional teams to develop scalable agents, optimizing existing systems for performance, and ensuring the reliability of our data processing pipelines and thus contributing to the advancement of healthcare analytics.",
+      "tech": ["Python", "LangGraph","LangChain","LangSmith","Cursor IDE", "AWS", "Docker", "Kubernetes", "Claude"]
+    }
+  ]
+}
